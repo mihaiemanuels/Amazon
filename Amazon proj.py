@@ -6,7 +6,8 @@ import smtplib
 url = "https://www.amazon.de/dp/B07SRXGBPH/ref=dp_cerb_1"
 
 headers = {"User-Agent": 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) '
-                         'AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36'}
+                         'AppleWebKit/537.36 (KHTML, like Gecko) '
+                         'Chrome/79.0.3945.130 Safari/537.36'}
 def check_price():
     page = requests.get(url, headers = headers)
     soup = BeautifulSoup(page.content,'html.parser')
