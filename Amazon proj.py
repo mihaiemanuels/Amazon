@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import smtplib
+import time
 
 
 url = "https://www.amazon.de/dp/B07SRXGBPH/ref=dp_cerb_1"
@@ -44,4 +45,6 @@ def send_mail():
     print ("Email has been sent !")
     server.quit()
 
-check_price()
+while (True)
+  check_price()
+  time.sleep(3600)
