@@ -32,13 +32,13 @@ def send_mail():
     setver.starttls()
     server.ehlo()
     
-    server.login("mihaiemanuels@gmail.com", 'fgsohzexockalnpm')
+    server.login("<sender@gmail.com>", '<your_app_protected_passwd>')
     body = 'Check out this link:' \
            'https://www.amazon.de/dp/B07SRXGBPH/ref=dp_cerb_1'
 
     mesage = f"Subject:  {subject}/n/n{body}"
 
-    server.sendmail(mihaiemanuels@gmail.com, mihaiemanuels@yahoo.com, mesage)
+    server.sendmail(<sender@gmail.com>, <dest@gmail.com>, mesage)
 
     print ("Email has been sent !")
     server.quit()
